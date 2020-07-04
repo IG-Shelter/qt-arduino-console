@@ -1,14 +1,17 @@
 # Qt Arduino Console
 For devices described as Arduino.
 
-Setting Example
+## Setting Example
+```
 Serial.begin(19200,SERIAL_8E2);
 Baud Rate: 19200
 Data Bits: 8
 Stop Bits: 2
 Parity: Even Parity
+```
 
-Arduino Console Mannual:
+## Arduino Console Mannual:
+```
 Type and press enter to send message.
 Click Load to load work flow.
 On: Start workflow
@@ -17,8 +20,9 @@ Off; Stop workflow
 >|: Execute next step without waiting.
 < : Step back.
 > : Step forward.
-
-JSON workflow Example
+```
+## JSON workflow Example
+```
 {
   "Description":"Example",
   "Workflow":[
@@ -41,5 +45,6 @@ JSON workflow Example
     }
   ]
 }
+```
 "Workflow" and "Commands" are scalable
 For each workflow, it will wait "Time" seconds to run next, while the commands are sent in batch.
