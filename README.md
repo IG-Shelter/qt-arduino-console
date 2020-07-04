@@ -1,5 +1,9 @@
 # Qt Arduino Console
-For devices described as Arduino.
+```
+Enviroment:
+Qt 5.15.0
+MSVC 2019 x64
+```
 
 ## Setting Example
 ```
