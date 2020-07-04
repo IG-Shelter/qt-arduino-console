@@ -139,6 +139,7 @@ void MainWindow::on_port_switch_button_clicked(bool checked)
                          this, &MainWindow::read_message);
         //refresh ui
         ui->portname_box->setEnabled(false);
+        ui->start_button->setEnabled(true);
         ui->port_switch_button->setText("Close Port");
         logger("Port: Arduino connected.");
     }
@@ -152,6 +153,7 @@ void MainWindow::on_port_switch_button_clicked(bool checked)
                          this, &MainWindow::read_message);
         //refresh ui
         ui->portname_box->setEnabled(true);
+        ui->start_button->setEnabled(false);
         ui->port_switch_button->setText("Open Port");
         logger("Port: Arduino disconnected.");
     }
@@ -235,6 +237,7 @@ void MainWindow::on_start_button_clicked()
                 this,&MainWindow::on_start_button_clicked);
         //refresh ui
         ui->start_button->setEnabled(false); //disable manual click
+        ui->port_switch_button->setEnabled(false); //disable port switch
         ui->stop_button->setEnabled(true);
         ui->pause_button->setEnabled(true);
         ui->skip_work_button->setEnabled(true);
@@ -264,6 +267,7 @@ void MainWindow::on_stop_button_clicked()
                this,&MainWindow::on_start_button_clicked);
     //refresh ui
     ui->start_button->setEnabled(true);
+    ui->port_switch_button->setEnabled(true);
     ui->stop_button->setEnabled(false);
     ui->pause_button->setEnabled(false);
     if(ui->pause_button->isChecked())
