@@ -6,6 +6,7 @@ Enviroment:
 Qt 5.15.0
 MSVC 2019 x64
 ```
+![image](https://github.com/IG-Shelter/qt-arduino-console/blob/master/ui_example.png)
 
 ## Setting Example
 ```
