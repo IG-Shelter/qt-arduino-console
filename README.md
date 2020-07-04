@@ -46,5 +46,4 @@ Off; Stop workflow
   ]
 }
 ```
-"Workflow" and "Commands" are scalable
-For each workflow, it will wait "Time" seconds to run next, while the commands are sent in batch.
+"Workflow" and "Commands" are scalable. For each operation/step, it will wait "Time" seconds to run next, while the commands are sent in batch.
