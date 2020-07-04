@@ -1,4 +1,6 @@
 # Qt Arduino Console
+1. Automatically send messages through serial port according to a JSON file.
+2. Only search ports have "Arduino" in description
 ```
 Enviroment:
 Qt 5.15.0
